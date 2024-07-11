@@ -6,23 +6,23 @@ const solution = await inquirer.prompt([
   {
     message: "Select one of the operator to perform your operation",
     type: "list",
-    name: "operators",
+    name: "operator",
     choices: ["Addition", "Subtraction", "Multiplication", "Division"],
   },
 ]);
 
 
 /// conditional statement:
-if(solution.operators === "Addition") {
+if(solution.operator === "Addition") {
   console.log(solution.firstnumber + solution.secondnumber);  
 }
-else if (solution.operators === "Subtraction") {
+else if (solution.operator === "Subtraction") {
     console.log(solution.firstnumber - solution.secondnumber);  
   }
-  else if (solution.operators === "Multiplication") {
+  else if (solution.operator === "Multiplication") {
     console.log(solution.firstnumber * solution.secondnumber);  
   }
-  else if (solution.operators === "Division") {
+  else if (solution.operator === "Division") {
     console.log(solution.firstnumber / solution.secondnumber);  
   } else {
      console.log("Plz select valid operator")
